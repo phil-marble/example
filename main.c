@@ -1,9 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <sys/types.h>
+#include <time.h>
+#include <unistd.h>
 
 int
 main ()
 {
+  srand ((unsigned int) time (NULL) + getpid ());
   switch (rand () % 4)
     {
     case 0:
