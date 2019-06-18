@@ -8,7 +8,7 @@ int
 main ()
 {
   srand ((unsigned int) time (NULL) + getpid ());
-  switch (rand () % 4)
+  switch (rand () % 5)
     {
     case 0:
       printf ("hello world\n");
