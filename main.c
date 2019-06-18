@@ -1,8 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int
 main ()
 {
-  printf ("hello world\n");
+  if (rand () % 2 == 0)
+    {
+      printf ("hello world\n");
+    }
+  else
+    {
+      printf ("howdy world\n");
+    }
   return 0;
 }
